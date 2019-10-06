@@ -3,4 +3,46 @@
   width: 1440px;
   border: 1px solid red;
 }
+
+.introduction {
+  height: 838px;
+}
+
+.introduction__main-part {
+  margin-left: 82px;
+}
+
+.introduction__main-part .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.introduction__main-part .header .logo {
+  margin-right: 50px;
+}
+
+.introduction__main-part .header .navigation {
+  margin-right: 50px;
+}
+
+.introduction__main-part .header .navigation .navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 580px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.introduction__main-part .header .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+}
 /*# sourceMappingURL=style.css.map */

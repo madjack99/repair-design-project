@@ -3,3 +3,35 @@
   width: 1440px;
   border: 1px solid red;
 }
+
+.introduction {
+  height: 838px;
+}
+
+.introduction__main-part {
+  margin-left: 82px;
+
+  .header {
+    display: flex;
+
+    .logo {
+      margin-right: 50px;
+    }
+
+    .navigation {
+      margin-right: 50px;
+
+      .navigation__list {
+        display: flex;
+        width: 580px;
+        justify-content: space-between;
+      }
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+    }
+  }
+}
