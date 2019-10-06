@@ -5,7 +5,15 @@
 }
 
 .introduction {
+  position: relative;
   height: 838px;
+}
+
+.instagram-link {
+  position: absolute;
+  top: 284px;
+  left: 31px;
+  transform: rotate(90deg);
 }
 
 .introduction__main-part {
@@ -13,6 +21,7 @@
 
   .header {
     display: flex;
+    margin: 22px 0 24px;
 
     .logo {
       margin-right: 50px;
@@ -32,6 +41,31 @@
       display: flex;
       justify-content: space-between;
       width: 300px;
+    }
+  }
+
+  .info-text {
+    width: 1358px;
+    height: 707px;
+    margin-top: 194px;
+    margin-left: 60px;
+
+    &__header {
+      width: 676px;
+      height: 105px;
+      font-size: 40px;
+    }
+
+    &__p {
+      width: 504px;
+      height: 89px;
+      font-size: 22px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      width: 450px;
     }
   }
 }
