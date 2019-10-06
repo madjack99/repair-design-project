@@ -2,6 +2,10 @@ $primary-color: #e3b873;
 $secondary-color: #ffffff;
 $tertiary-color: #000000;
 
+* {
+  box-sizing: border-box;
+}
+
 .main-wrapper {
   margin: 0 auto;
   width: 1440px;
@@ -149,5 +153,123 @@ $tertiary-color: #000000;
   &__icon {
     margin: auto;
     color: $primary-color;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-wrapper {
+    margin: 0 auto;
+    width: 376px;
+    background: $tertiary-color;
+  }
+  .introduction {
+    position: relative;
+    border-top: 0.5px solid black;
+  }
+
+  .instagram-link {
+    display: none;
+  }
+
+  .introduction__main-part {
+    margin-left: 0;
+
+    .header {
+      display: flex;
+      margin: 22px 0 24px;
+      font-size: 10px;
+
+      .logo {
+        width: 300px;
+        margin-left: 18px;
+        margin-right: 50px;
+        color: $primary-color;
+      }
+
+      .navigation {
+        display: none;
+      }
+
+      .contact {
+        display: flex;
+        width: 350px;
+        margin-top: -10px;
+        justify-content: space-between;
+        align-items: center;
+
+        &__number {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+
+        &__call-request {
+          display: none;
+        }
+      }
+    }
+
+    .info-text {
+      width: 375px;
+      height: 476px;
+      padding-top: 85px;
+      padding-left: 18px;
+      background: url('../assets/images/header-image.png') no-repeat;
+
+      &__header {
+        width: 339px;
+        height: 60px;
+        margin-bottom: 19px;
+        font-size: 23px;
+        line-height: 1.2;
+        font-family: 'Yeseva One', cursive;
+        color: $secondary-color;
+      }
+
+      &__important-text {
+        color: $primary-color;
+      }
+
+      &__p {
+        width: 340px;
+        height: 89px;
+        margin-bottom: 41px;
+        font-size: 18px;
+        color: $secondary-color;
+      }
+
+      &__footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        width: 450px;
+      }
+
+      &__calc-cost {
+        margin-bottom: 26px;
+        background: $primary-color;
+        color: $secondary-color;
+        border-radius: 5px;
+      }
+      &__submit {
+        border: 1px solid #ffffff;
+        color: $secondary-color;
+        border-radius: 5px;
+      }
+
+      &__button {
+        display: flex;
+        width: 338px;
+        height: 51px;
+
+        .text {
+          margin: auto;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .arrow-down {
+    display: none;
   }
 }

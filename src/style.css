@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .main-wrapper {
   margin: 0 auto;
   width: 1440px;
@@ -170,5 +175,123 @@
 .arrow-down__icon {
   margin: auto;
   color: #e3b873;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-wrapper {
+    margin: 0 auto;
+    width: 376px;
+    background: #000000;
+  }
+  .introduction {
+    position: relative;
+    border-top: 0.5px solid black;
+  }
+  .instagram-link {
+    display: none;
+  }
+  .introduction__main-part {
+    margin-left: 0;
+  }
+  .introduction__main-part .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 22px 0 24px;
+    font-size: 10px;
+  }
+  .introduction__main-part .header .logo {
+    width: 300px;
+    margin-left: 18px;
+    margin-right: 50px;
+    color: #e3b873;
+  }
+  .introduction__main-part .header .navigation {
+    display: none;
+  }
+  .introduction__main-part .header .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 350px;
+    margin-top: -10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .introduction__main-part .header .contact__number {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .introduction__main-part .header .contact__call-request {
+    display: none;
+  }
+  .introduction__main-part .info-text {
+    width: 375px;
+    height: 476px;
+    padding-top: 85px;
+    padding-left: 18px;
+    background: url("../assets/images/header-image.png") no-repeat;
+  }
+  .introduction__main-part .info-text__header {
+    width: 339px;
+    height: 60px;
+    margin-bottom: 19px;
+    font-size: 23px;
+    line-height: 1.2;
+    font-family: 'Yeseva One', cursive;
+    color: #ffffff;
+  }
+  .introduction__main-part .info-text__important-text {
+    color: #e3b873;
+  }
+  .introduction__main-part .info-text__p {
+    width: 340px;
+    height: 89px;
+    margin-bottom: 41px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .introduction__main-part .info-text__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 450px;
+  }
+  .introduction__main-part .info-text__calc-cost {
+    margin-bottom: 26px;
+    background: #e3b873;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  .introduction__main-part .info-text__submit {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  .introduction__main-part .info-text__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 338px;
+    height: 51px;
+  }
+  .introduction__main-part .info-text__button .text {
+    margin: auto;
+    font-size: 13px;
+  }
+  .arrow-down {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
