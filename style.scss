@@ -1,19 +1,24 @@
+$primary-color: #e3b873;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
+
 .main-wrapper {
   margin: 0 auto;
   width: 1440px;
-  border: 1px solid red;
+  background: $tertiary-color;
 }
 
 .introduction {
   position: relative;
   height: 838px;
+  border-top: 0.5px solid black;
 }
 
 .instagram-link {
   position: absolute;
-  top: 284px;
-  left: 31px;
+  top: 330px;
   transform: rotate(90deg);
+  color: $primary-color;
 }
 
 .introduction__main-part {
@@ -22,44 +27,82 @@
   .header {
     display: flex;
     margin: 22px 0 24px;
+    font-size: 14px;
 
     .logo {
       margin-right: 50px;
+      color: $primary-color;
     }
 
     .navigation {
       margin-right: 50px;
 
-      .navigation__list {
+      &__list {
         display: flex;
         width: 580px;
         justify-content: space-between;
+      }
+
+      &__link {
+        color: $secondary-color;
+        text-decoration: none;
       }
     }
 
     .contact {
       display: flex;
+      width: 350px;
+      margin-top: -10px;
       justify-content: space-between;
-      width: 300px;
+      align-items: center;
+
+      &__number {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+
+      &__call-request {
+        width: 181px;
+        height: 37px;
+        color: $secondary-color;
+        background: $primary-color;
+      }
+
+      &__text {
+        font-size: 13px;
+        margin: 13px 33px;
+      }
     }
   }
 
   .info-text {
     width: 1358px;
-    height: 707px;
-    margin-top: 194px;
-    margin-left: 60px;
+    height: 570px;
+    padding-top: 194px;
+    padding-left: 60px;
+    overflow: hidden;
+    background: url('../assets/images/header-image.png') no-repeat;
 
     &__header {
       width: 676px;
       height: 105px;
+      margin-bottom: 19px;
       font-size: 40px;
+      line-height: 1.2;
+      font-family: 'Yeseva One', cursive;
+      color: $secondary-color;
+    }
+
+    &__important-text {
+      color: $primary-color;
     }
 
     &__p {
       width: 504px;
       height: 89px;
+      margin-bottom: 41px;
       font-size: 22px;
+      color: $secondary-color;
     }
 
     &__footer {
@@ -67,5 +110,44 @@
       justify-content: space-between;
       width: 450px;
     }
+
+    &__calc-cost {
+      background: $primary-color;
+      color: $secondary-color;
+      border-radius: 5px;
+    }
+    &__submit {
+      border: 1px solid #ffffff;
+      color: $secondary-color;
+      border-radius: 5px;
+    }
+
+    &__button {
+      display: flex;
+      width: 207px;
+      height: 51px;
+
+      .text {
+        margin: auto;
+        font-size: 13px;
+      }
+    }
+  }
+}
+.arrow-down {
+  position: absolute;
+  display: flex;
+  width: 247px;
+  height: 97px;
+  top: 790px;
+  background: $tertiary-color;
+
+  &__text {
+    margin: auto;
+    color: $secondary-color;
+  }
+  &__icon {
+    margin: auto;
+    color: $primary-color;
   }
 }
