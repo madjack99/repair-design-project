@@ -1,275 +1,85 @@
-$primary-color: #e3b873;
-$secondary-color: #ffffff;
-$tertiary-color: #000000;
+$primary: #e3b873;
+$secondary: #ffffff;
+
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../assets/fonts/futuraDemiC/FuturaDemiC.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../assets/fonts/yesevaOne/YesevaOne.otf") format("opentype");
+}
+@font-face {
+  font-family: "FuturaBook";
+  src: url("../assets/fonts/futuraBookC/FuturaBookC.otf") format("opentype");
+}
 
 * {
   box-sizing: border-box;
 }
 
-.main-wrapper {
-  margin: 0 auto;
-  width: 1440px;
-  background: $tertiary-color;
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background: #000000;
+
+  .main-title {
+    color: $primary;
+    font-size: 12px;
+    font-family: "FuturaDemiC", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .mobile {
+    color: $secondary;
+    font-size: 12px;
+    font-family: "FuturaDemiC", sans-serif;
+  }
 }
 
 .introduction {
-  position: relative;
-  height: 838px;
-  border-top: 0.5px solid black;
-}
+  width: 375px;
+  height: 476px;
+  padding: 85px 18px 0;
+  background-image: url("../assets/images/introductionBGMobile.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.instagram-link {
-  position: absolute;
-  top: 330px;
-  transform: rotate(90deg);
-  color: $primary-color;
-}
-
-.introduction__main-part {
-  margin-left: 82px;
-
-  .header {
-    display: flex;
-    margin: 22px 0 24px;
-    font-size: 14px;
-
-    .logo {
-      margin-right: 50px;
-      color: $primary-color;
-    }
-
-    .navigation {
-      margin-right: 50px;
-
-      &__list {
-        display: flex;
-        width: 580px;
-        justify-content: space-between;
-      }
-
-      &__link {
-        color: $secondary-color;
-        text-decoration: none;
-      }
-    }
-
-    .contact {
-      display: flex;
-      width: 350px;
-      margin-top: -10px;
-      justify-content: space-between;
-      align-items: center;
-
-      &__number {
-        color: $primary-color;
-        text-decoration: underline;
-      }
-
-      &__call-request {
-        width: 181px;
-        height: 37px;
-        color: $secondary-color;
-        background: $primary-color;
-      }
-
-      &__text {
-        font-size: 13px;
-        margin: 13px 33px;
-      }
-    }
+  .introduction__header {
+    margin-bottom: 16px;
+    font-size: 23px;
+    font-family: "YesevaOne", sans-serif;
+    color: $secondary;
   }
 
-  .info-text {
-    width: 1358px;
-    height: 570px;
-    padding-top: 194px;
-    padding-left: 60px;
-    overflow: hidden;
-    background: url('../assets/images/header-image.png') no-repeat;
-
-    &__header {
-      width: 676px;
-      height: 105px;
-      margin-bottom: 19px;
-      font-size: 40px;
-      line-height: 1.2;
-      font-family: 'Yeseva One', cursive;
-      color: $secondary-color;
-    }
-
-    &__important-text {
-      color: $primary-color;
-    }
-
-    &__p {
-      width: 504px;
-      height: 89px;
-      margin-bottom: 41px;
-      font-size: 22px;
-      color: $secondary-color;
-    }
-
-    &__footer {
-      display: flex;
-      justify-content: space-between;
-      width: 450px;
-    }
-
-    &__calc-cost {
-      background: $primary-color;
-      color: $secondary-color;
-      border-radius: 5px;
-    }
-    &__submit {
-      border: 1px solid #ffffff;
-      color: $secondary-color;
-      border-radius: 5px;
-    }
-
-    &__button {
-      display: flex;
-      width: 207px;
-      height: 51px;
-
-      .text {
-        margin: auto;
-        font-size: 13px;
-      }
-    }
-  }
-}
-.arrow-down {
-  position: absolute;
-  display: flex;
-  width: 247px;
-  height: 97px;
-  top: 790px;
-  background: $tertiary-color;
-
-  &__text {
-    margin: auto;
-    color: $secondary-color;
-  }
-  &__icon {
-    margin: auto;
-    color: $primary-color;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .main-wrapper {
-    margin: 0 auto;
-    width: 376px;
-    background: $tertiary-color;
-  }
-  .introduction {
-    position: relative;
-    border-top: 0.5px solid black;
+  .introduction__text {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-family: "FuturaBook", sans-serif;
+    color: $secondary;
   }
 
-  .instagram-link {
-    display: none;
+  .calculate {
+    width: 338px;
+    height: 51px;
+    margin-bottom: 26px;
+    border: none;
+    background: $primary;
+    font-family: "FuturaDemiC";
+    color: $secondary;
   }
 
-  .introduction__main-part {
-    margin-left: 0;
-
-    .header {
-      display: flex;
-      margin: 22px 0 24px;
-      font-size: 10px;
-
-      .logo {
-        width: 300px;
-        margin-left: 18px;
-        margin-right: 50px;
-        color: $primary-color;
-      }
-
-      .navigation {
-        display: none;
-      }
-
-      .contact {
-        display: flex;
-        width: 350px;
-        margin-top: -10px;
-        justify-content: space-between;
-        align-items: center;
-
-        &__number {
-          color: $secondary-color;
-          text-decoration: none;
-        }
-
-        &__call-request {
-          display: none;
-        }
-      }
-    }
-
-    .info-text {
-      width: 375px;
-      height: 476px;
-      padding-top: 85px;
-      padding-left: 18px;
-      background: url('../assets/images/header-image.png') no-repeat;
-
-      &__header {
-        width: 339px;
-        height: 60px;
-        margin-bottom: 19px;
-        font-size: 23px;
-        line-height: 1.2;
-        font-family: 'Yeseva One', cursive;
-        color: $secondary-color;
-      }
-
-      &__important-text {
-        color: $primary-color;
-      }
-
-      &__p {
-        width: 340px;
-        height: 89px;
-        margin-bottom: 41px;
-        font-size: 18px;
-        color: $secondary-color;
-      }
-
-      &__footer {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-
-        width: 450px;
-      }
-
-      &__calc-cost {
-        margin-bottom: 26px;
-        background: $primary-color;
-        color: $secondary-color;
-        border-radius: 5px;
-      }
-      &__submit {
-        border: 1px solid #ffffff;
-        color: $secondary-color;
-        border-radius: 5px;
-      }
-
-      &__button {
-        display: flex;
-        width: 338px;
-        height: 51px;
-
-        .text {
-          margin: auto;
-          font-size: 13px;
-        }
-      }
-    }
-  }
-  .arrow-down {
-    display: none;
+  .apply {
+    width: 338px;
+    height: 51px;
+    border: 1px solid $secondary;
+    background: rgba(0, 0, 0, 0);
+    font-family: "FuturaDemiC";
+    color: $secondary;
   }
 }
