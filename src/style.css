@@ -52,7 +52,7 @@
   height: 476px;
   padding: 85px 18px 0;
   background-image: url("../assets/images/introductionBGMobile.png");
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,12 +95,39 @@
   color: #e3b873;
 }
 
+.introduction .socials {
+  display: none;
+}
+
+.introduction .scroll-down {
+  display: none;
+}
+
 @media only screen and (min-width: 375px) {
   .header .request__btn {
     display: block;
     width: 161px;
     height: 37px;
     font-size: 13px;
+  }
+  .introduction {
+    width: 100vw;
+    height: 707px;
+    padding: 195px 0 0 30px;
+    background-image: url("../assets/images/introductionBGDesktop.png");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .introduction .introduction__header {
+    font-size: 40px;
+  }
+  .introduction .introduction__text {
+    font-size: 22px;
+  }
+  .introduction .btn-calculate {
+    margin-right: 20px;
   }
 }
 
@@ -130,11 +157,54 @@
   .header .mobile {
     color: #e3b873;
   }
+  .introduction {
+    padding: 195px 0 0 140px;
+  }
+  .introduction .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 82px;
+    height: 707px;
+    background: #000000;
+  }
+  .introduction .socials .social__text {
+    margin: auto;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font-family: "FuturaDemiC";
+  }
+  .introduction .scroll-down {
+    display: block;
+    position: absolute;
+    width: 247px;
+    height: 97px;
+    top: 750px;
+    left: 0;
+    padding: 40px 0 0 48px;
+    font-size: 14px;
+    color: #ffffff;
+    background: #000000;
+    font-family: "YesevaOne", sans-serif;
+  }
+  .introduction .scroll-down .fa-chevron-circle-down {
+    margin-left: 12px;
+    font-size: 22px;
+    color: #e3b873;
+  }
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .btn {

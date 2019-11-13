@@ -32,7 +32,7 @@
   height: 476px;
   padding: 85px 18px 0;
   background-image: url("../assets/images/introductionBGMobile.png");
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,6 +73,14 @@
       color: $primary;
     }
   }
+
+  .socials {
+    display: none;
+  }
+
+  .scroll-down {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -82,6 +90,29 @@
       width: 161px;
       height: 37px;
       font-size: 13px;
+    }
+  }
+
+  .introduction {
+    width: 100vw;
+    height: 707px;
+    padding: 195px 0 0 30px;
+    background-image: url("../assets/images/introductionBGDesktop.png");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .introduction__header {
+      font-size: 40px;
+    }
+
+    .introduction__text {
+      font-size: 22px;
+    }
+
+    .btn-calculate {
+      margin-right: 20px;
     }
   }
 }
@@ -110,6 +141,45 @@
 
     .mobile {
       color: $primary;
+    }
+  }
+
+  .introduction {
+    padding: 195px 0 0 140px;
+    .socials {
+      display: flex;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 82px;
+      height: 707px;
+      background: $tertiary;
+
+      .social__text {
+        margin: auto;
+        transform: rotate(90deg);
+        font-family: "FuturaDemiC";
+      }
+    }
+
+    .scroll-down {
+      display: block;
+      position: absolute;
+      width: 247px;
+      height: 97px;
+      top: 750px;
+      left: 0;
+      padding: 40px 0 0 48px;
+      font-size: 14px;
+      color: $secondary;
+      background: $tertiary;
+      font-family: "YesevaOne", sans-serif;
+
+      .fa-chevron-circle-down {
+        margin-left: 12px;
+        font-size: 22px;
+        color: $primary;
+      }
     }
   }
 }
