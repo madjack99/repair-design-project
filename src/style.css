@@ -33,10 +33,18 @@
   text-transform: uppercase;
 }
 
+.header .navigation__list {
+  display: none;
+}
+
 .header .mobile {
   color: #ffffff;
   font-size: 12px;
   font-family: "FuturaDemiC", sans-serif;
+}
+
+.header .request__btn {
+  display: none;
 }
 
 .introduction {
@@ -72,14 +80,6 @@
   width: 338px;
   height: 51px;
   margin-bottom: 26px;
-  border: none;
-  background: #e3b873;
-  font-family: "FuturaDemiC";
-  color: #ffffff;
-}
-
-.introduction .btn-calculate:hover {
-  color: #000000;
 }
 
 .introduction .btn-apply {
@@ -95,12 +95,56 @@
   color: #e3b873;
 }
 
+@media only screen and (min-width: 375px) {
+  .header .request__btn {
+    display: block;
+    width: 161px;
+    height: 37px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 90px;
+  }
+  .header .main-title {
+    font-size: 14px;
+  }
+  .header .navigation__list {
+    width: 55vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #ffffff;
+    font-family: "FuturaBookC", sans-serif;
+    font-size: 14px;
+  }
+  .header .navigation__list .navigation__link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .header .mobile {
+    color: #e3b873;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.link {
-  text-decoration: none;
+.btn {
+  background: #e3b873;
+  color: #ffffff;
+  border: none;
+  font-family: "FuturaDemiC", sans-serif;
+}
+
+.btn:hover {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

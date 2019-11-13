@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
-.link {
-  text-decoration: none;
+.btn {
+  background: $primary;
+  color: $secondary;
+  border: none;
+  font-family: "FuturaDemiC", sans-serif;
+
+  &:hover {
+    color: $tertiary;
+  }
 }
