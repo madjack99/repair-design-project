@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background: #000000;
+
+  .main-title {
+    color: $primary;
+    font-size: 12px;
+    font-family: "FuturaDemiC", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .mobile {
+    color: $secondary;
+    font-size: 12px;
+    font-family: "FuturaDemiC", sans-serif;
+  }
+}
+
+.introduction {
+  width: 375px;
+  height: 476px;
+  padding: 85px 18px 0;
+  background-image: url("../assets/images/introductionBGMobile.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .introduction__header {
+    margin-bottom: 16px;
+    font-size: 23px;
+    font-family: "YesevaOne", sans-serif;
+    color: $secondary;
+
+    .introduction__header_emphasized {
+      color: $primary;
+    }
+  }
+
+  .introduction__text {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-family: "FuturaBookC", sans-serif;
+    color: $secondary;
+  }
+
+  .btn-calculate {
+    width: 338px;
+    height: 51px;
+    margin-bottom: 26px;
+    border: none;
+    background: $primary;
+    font-family: "FuturaDemiC";
+    color: $secondary;
+  }
+
+  .btn-apply {
+    width: 338px;
+    height: 51px;
+    border: 1px solid $secondary;
+    background: rgba(0, 0, 0, 0);
+    font-family: "FuturaDemiC";
+    color: $secondary;
+  }
+}

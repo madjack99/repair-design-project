@@ -9,13 +9,8 @@
 }
 
 @font-face {
-  font-family: "FuturaBook";
+  font-family: "FuturaBookC";
   src: url("../assets/fonts/futuraBookC/FuturaBookC.otf") format("opentype");
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .header {
@@ -62,14 +57,18 @@
   color: #ffffff;
 }
 
+.introduction .introduction__header .introduction__header_emphasized {
+  color: #e3b873;
+}
+
 .introduction .introduction__text {
   margin-bottom: 32px;
   font-size: 18px;
-  font-family: "FuturaBook", sans-serif;
+  font-family: "FuturaBookC", sans-serif;
   color: #ffffff;
 }
 
-.introduction .calculate {
+.introduction .btn-calculate {
   width: 338px;
   height: 51px;
   margin-bottom: 26px;
@@ -79,12 +78,17 @@
   color: #ffffff;
 }
 
-.introduction .apply {
+.introduction .btn-apply {
   width: 338px;
   height: 51px;
   border: 1px solid #ffffff;
   background: rgba(0, 0, 0, 0);
   font-family: "FuturaDemiC";
   color: #ffffff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
