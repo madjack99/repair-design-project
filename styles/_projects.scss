@@ -1,0 +1,63 @@
+.projects {
+  padding: 36px 18px 0 18px;
+  background: $tertiary;
+
+  .projects__header {
+    margin-bottom: 22px;
+    text-align: center;
+    font-family: "YesevaOne", sans-serif;
+    font-size: 22px;
+    color: $primary;
+  }
+
+  .projects__text {
+    margin-bottom: 36px;
+    text-align: center;
+    font-family: "FuturaBookC", sans-serif;
+    color: $secondary;
+  }
+
+  .projects__gallery {
+    display: flex;
+    margin-bottom: 36px;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    height: 241px;
+    background: url("../assets/images/projectImage.png");
+
+    .controls {
+      color: $primary;
+      margin: 14px;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  .project__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 341px;
+    height: 146px;
+
+    .project-item__title {
+      margin-bottom: 11px;
+      font-family: "YesevaOne", sans-serif;
+      font-size: 14px;
+      color: $primary;
+    }
+
+    .project-item__text {
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 14px;
+      color: $secondary;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) {
+}
+@media only screen and (min-width: 768px) {
+}
