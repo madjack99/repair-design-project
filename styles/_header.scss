@@ -55,6 +55,10 @@
     background: $primary;
     font-family: "FuturaDemiC";
     color: $secondary;
+
+    &:hover {
+      color: $tertiary;
+    }
   }
 
   .btn-apply {
@@ -64,5 +68,15 @@
     background: rgba(0, 0, 0, 0);
     font-family: "FuturaDemiC";
     color: $secondary;
+
+    &:hover {
+      color: $primary;
+    }
   }
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 768px) {
 }

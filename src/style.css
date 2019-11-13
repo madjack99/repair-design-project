@@ -78,6 +78,10 @@
   color: #ffffff;
 }
 
+.introduction .btn-calculate:hover {
+  color: #000000;
+}
+
 .introduction .btn-apply {
   width: 338px;
   height: 51px;
@@ -87,8 +91,16 @@
   color: #ffffff;
 }
 
+.introduction .btn-apply:hover {
+  color: #e3b873;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
