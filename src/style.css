@@ -600,6 +600,125 @@
   }
 }
 
+.types {
+  margin-top: -25px;
+  padding: 85px 17px 0;
+  background: #ffffff;
+}
+
+.types .types__header {
+  margin-bottom: 17px;
+  font-family: "YesevaOne";
+  font-size: 22px;
+  text-align: center;
+}
+
+.types .types__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.types .types__image .picture {
+  margin: 0 10px;
+}
+
+.types .types__image::before {
+  content: "";
+  width: 32px;
+  height: 1.2px;
+  margin-top: 16px;
+  background: #e3b873;
+}
+
+.types .types__image::after {
+  content: "";
+  width: 32px;
+  height: 1.2px;
+  margin-top: 16px;
+  background: #e3b873;
+}
+
+.types .samples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.types .samples .item {
+  margin-bottom: 60px;
+}
+
+.types .samples .item .item__description {
+  position: relative;
+  width: 270px;
+  height: 241px;
+  margin-top: -120px;
+  padding: 21px 31px;
+  background: #f5f2f2;
+  z-index: 1;
+}
+
+.types .samples .item .item__description .description__header {
+  margin-bottom: 10px;
+  font-family: "YesevaOne";
+  font-size: 15px;
+}
+
+.types .samples .item .item__description .description__points {
+  margin-left: 14px;
+  list-style: disc;
+  font-family: "FuturaBookC";
+}
+
+.types .samples .item .item__description .description__points li {
+  line-height: 1.4rem;
+}
+
+.types .samples .item .item__price {
+  position: relative;
+  width: 190px;
+  height: 40px;
+  margin-top: -10px;
+  font-family: "YesevaOne";
+  text-transform: uppercase;
+  font-size: 15px;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 375px) {
+  .types .samples {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .types {
+    padding: 0 10px;
+  }
+  .types .samples {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
