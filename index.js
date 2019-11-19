@@ -4,5 +4,7 @@ document.addEventListener("scroll", e => {
 
 window.addEventListener("load", e => {
   let a = sessionStorage.getItem("yLocation");
-  window.scrollTo(0, a);
+  window.scrollTo(0, document.body.scrollHeight);
 });
+
+// window.scrollTo(0, a);

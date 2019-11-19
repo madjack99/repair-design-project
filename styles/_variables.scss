@@ -1,3 +1,11 @@
 $primary: #e3b873;
 $secondary: #ffffff;
 $tertiary: #000000;
+
+@mixin fontFuturaBook {
+  font-family: "FuturaBookC";
+}
+
+@mixin fontFuturaDemi {
+  font-family: "FuturaDemiC";
+}
