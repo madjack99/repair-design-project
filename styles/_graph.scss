@@ -1,0 +1,96 @@
+.graph {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .graph {
+    display: grid;
+    margin-bottom: 260px;
+
+    .graph__image {
+      width: 1083px;
+      height: 691px;
+      background: url("../assets/images/graph.png") no-repeat;
+    }
+
+    .details {
+      .form {
+        width: 509px;
+        height: 506px;
+        padding: 28px 49px 0;
+        justify-self: left;
+        align-self: center;
+        background: $tertiary;
+
+        .form__header {
+          width: 297px;
+          margin-left: 50px;
+          margin-bottom: 40px;
+          @include fontFuturaDemi;
+          font-size: 20px;
+          text-align: center;
+          color: $secondary;
+        }
+
+        .label {
+          @include fontFuturaBook;
+          font-size: 15px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        .input {
+          margin-bottom: 50px;
+          padding: 8px 0;
+          border: none;
+          border-bottom: 1px solid $secondary;
+          @include fontFuturaMedium;
+          font-size: 18px;
+          background: $tertiary;
+
+          &::placeholder {
+            color: $secondary;
+          }
+        }
+
+        .email-input {
+          margin-bottom: 16px;
+        }
+
+        .checkbox-label {
+          font-size: 16px;
+          color: $secondary;
+        }
+
+        .checkbox-input {
+          margin-bottom: 40px;
+        }
+
+        .submit {
+          width: 213px;
+          height: 51px;
+          margin-left: 200px;
+          font-size: 13px;
+          text-transform: uppercase;
+        }
+      }
+
+      .discount {
+        margin-top: 38px;
+        display: flex;
+        align-items: center;
+
+        .discount__details {
+          @include fontFuturaDemi;
+          font-size: 20px;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .graph {
+    grid-template-columns: 1083px auto;
+  }
+}

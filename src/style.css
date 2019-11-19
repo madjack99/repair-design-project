@@ -13,6 +13,11 @@
   src: url("../assets/fonts/futuraBookC/FuturaBookC.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "FuturaMediumC";
+  src: url("../assets/fonts/futuraMediumC/FuturaMediumC.otf") format("opentype");
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -716,6 +721,107 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+.graph {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .graph {
+    display: -ms-grid;
+    display: grid;
+    margin-bottom: 260px;
+  }
+  .graph .graph__image {
+    width: 1083px;
+    height: 691px;
+    background: url("../assets/images/graph.png") no-repeat;
+  }
+  .graph .details .form {
+    width: 509px;
+    height: 506px;
+    padding: 28px 49px 0;
+    -ms-grid-column-align: left;
+        justify-self: left;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background: #000000;
+  }
+  .graph .details .form .form__header {
+    width: 297px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    font-family: "FuturaDemiC";
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .graph .details .form .label {
+    font-family: "FuturaBookC";
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .graph .details .form .input {
+    margin-bottom: 50px;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-family: "FuturaMediumC";
+    font-size: 18px;
+    background: #000000;
+  }
+  .graph .details .form .input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  .graph .details .form .input:-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .graph .details .form .input::-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .graph .details .form .input::placeholder {
+    color: #ffffff;
+  }
+  .graph .details .form .email-input {
+    margin-bottom: 16px;
+  }
+  .graph .details .form .checkbox-label {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .graph .details .form .checkbox-input {
+    margin-bottom: 40px;
+  }
+  .graph .details .form .submit {
+    width: 213px;
+    height: 51px;
+    margin-left: 200px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .graph .details .discount {
+    margin-top: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .graph .details .discount .discount__details {
+    font-family: "FuturaDemiC";
+    font-size: 20px;
+    color: #e3b873;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .graph {
+    -ms-grid-columns: 1083px auto;
+        grid-template-columns: 1083px auto;
   }
 }
 
