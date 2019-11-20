@@ -18,6 +18,11 @@
   src: url("../assets/fonts/futuraMediumC/FuturaMediumC.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../assets/fonts/proximaNova/proximanova.otf") format("opentype");
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -822,6 +827,135 @@
   .graph {
     -ms-grid-columns: 1083px auto;
         grid-template-columns: 1083px auto;
+  }
+}
+
+.dreams {
+  padding: 55px 18px 0;
+}
+
+.dreams .description .description__header {
+  margin-bottom: 25px;
+  font-family: "YesevaOne";
+  font-size: 22px;
+  color: #e3b873;
+  text-align: center;
+}
+
+.dreams .description .description__list {
+  display: none;
+}
+
+.dreams .samples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dreams .samples .samples__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 340px;
+  height: 242px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../assets/images/dreams-mobile.png");
+}
+
+.dreams .samples .samples__mobile .controls {
+  padding: 0 14px;
+  color: #e3b873;
+}
+
+.dreams .samples .samples__mobile .controls:hover {
+  color: #ffffff;
+}
+
+.dreams .samples .samples__one,
+.dreams .samples .samples__two,
+.dreams .samples .samples__three,
+.dreams .samples .samples__four {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .dreams {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 587px auto;
+        grid-template-columns: 587px auto;
+    height: 864px;
+    background: url("../assets/images/dreams-bg.png");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+  }
+  .dreams .description {
+    padding: 137px 99px;
+  }
+  .dreams .description .description__header {
+    margin-bottom: 47px;
+    font-size: 27px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .dreams .description .description__list {
+    display: block;
+  }
+  .dreams .description .description__list .list-item {
+    margin-bottom: 25px;
+    font-family: "ProximaNova";
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .dreams .description .description__list .list-item a:hover {
+    color: #e3b873;
+    text-decoration: underline;
+  }
+  .dreams .samples {
+    display: -ms-grid;
+    display: grid;
+  }
+  .dreams .samples .samples__mobile {
+    display: none;
+  }
+  .dreams .samples .samples__one {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .dreams .samples {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: -100px;
+  }
+  .dreams .samples .samples__mobile {
+    display: none;
+  }
+  .dreams .samples .samples__one {
+    display: inline;
+  }
+  .dreams .samples .samples__two {
+    display: inline;
+  }
+  .dreams .samples .samples__three {
+    display: inline;
+    margin-top: -60px;
+  }
+  .dreams .samples .samples__four {
+    display: inline;
+    margin-top: -355px;
   }
 }
 

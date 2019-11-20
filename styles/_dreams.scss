@@ -1,0 +1,128 @@
+.dreams {
+  padding: 55px 18px 0;
+
+  .description {
+    .description__header {
+      margin-bottom: 25px;
+      @include fontYesevaOne;
+      font-size: 22px;
+      color: $primary;
+      text-align: center;
+    }
+
+    .description__list {
+      display: none;
+    }
+  }
+
+  .samples {
+    display: flex;
+    justify-content: center;
+
+    .samples__mobile {
+      display: flex;
+      width: 340px;
+      height: 242px;
+      justify-content: space-between;
+      align-items: center;
+      background: url("../assets/images/dreams-mobile.png");
+
+      .controls {
+        padding: 0 14px;
+        color: $primary;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+    .samples__one,
+    .samples__two,
+    .samples__three,
+    .samples__four {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .dreams {
+    display: grid;
+    grid-template-columns: 587px auto;
+    height: 864px;
+    background: url("../assets/images/dreams-bg.png");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+
+    .description {
+      padding: 137px 99px;
+
+      .description__header {
+        margin-bottom: 47px;
+        font-size: 27px;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      .description__list {
+        display: block;
+
+        .list-item {
+          margin-bottom: 25px;
+          @include fontProximaNova;
+          font-size: 20px;
+          color: $secondary;
+
+          a {
+            &:hover {
+              color: $primary;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .samples {
+      display: grid;
+
+      .samples__mobile {
+        display: none;
+      }
+
+      .samples__one {
+        display: inline;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .dreams {
+    .samples {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+      margin-top: -100px;
+
+      .samples__mobile {
+        display: none;
+      }
+
+      .samples__one {
+        display: inline;
+      }
+      .samples__two {
+        display: inline;
+      }
+      .samples__three {
+        display: inline;
+        margin-top: -60px;
+      }
+      .samples__four {
+        display: inline;
+        margin-top: -355px;
+      }
+    }
+  }
+}
