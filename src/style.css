@@ -830,10 +830,6 @@
   }
 }
 
-.dreams {
-  padding: 55px 18px 0;
-}
-
 .dreams .description .description__header {
   margin-bottom: 25px;
   font-family: "YesevaOne";
@@ -956,6 +952,148 @@
   .dreams .samples .samples__four {
     display: inline;
     margin-top: -355px;
+  }
+}
+
+.design {
+  margin-top: -120px;
+  padding: 170px 18px 0;
+  background: #000000;
+}
+
+.design .design__header {
+  margin-bottom: 15px;
+  font-family: "YesevaOne";
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.design .design__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 23px;
+}
+
+.design .design__logo .picture {
+  margin: 0 10px;
+}
+
+.design .design__logo::before {
+  content: "";
+  width: 32px;
+  height: 1.2px;
+  margin-top: 16px;
+  background: #e3b873;
+}
+
+.design .design__logo::after {
+  content: "";
+  width: 32px;
+  height: 1.2px;
+  margin-top: 16px;
+  background: #e3b873;
+}
+
+.design .design__text {
+  margin-bottom: 40px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.design .design__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design .design__gallery .item {
+  margin-bottom: 60px;
+}
+
+.design .design__gallery .item .description {
+  position: relative;
+  width: 270px;
+  height: 177px;
+  margin-top: -130px;
+  padding: 18px 31px 0;
+  background: #ffffff;
+  z-index: 2;
+}
+
+.design .design__gallery .item .description .description__header {
+  margin-bottom: 13px;
+  font-family: "YesevaOne";
+  font-size: 15px;
+  color: #000000;
+}
+
+.design .design__gallery .item .description .description__list li {
+  margin-bottom: 7px;
+  font-family: "FuturaBookC";
+  font-size: 13px;
+  color: #959595;
+}
+
+.design .design__gallery .item .price {
+  position: relative;
+  width: 190px;
+  height: 40px;
+  margin-top: -10px;
+  font-family: "YesevaOne";
+  font-size: 15px;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.design .design__gallery .item-two .description,
+.design .design__gallery .item-three .description {
+  height: 205px;
+}
+
+@media only screen and (min-width: 768px) {
+  .design {
+    padding: 170px 25px 0;
+  }
+  .design .design__gallery {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .design {
+    padding: 160px 100px 0;
+    background: #ffffff;
+  }
+  .design .design__gallery {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 

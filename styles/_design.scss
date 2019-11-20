@@ -1,0 +1,124 @@
+.design {
+  margin-top: -120px;
+  padding: 170px 18px 0;
+  background: $tertiary;
+
+  .design__header {
+    margin-bottom: 15px;
+    @include fontYesevaOne;
+    font-size: 22px;
+    color: $secondary;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .design__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+
+    .picture {
+      margin: 0 10px;
+    }
+
+    &::before {
+      content: "";
+      width: 32px;
+      height: 1.2px;
+      margin-top: 16px;
+      background: $primary;
+    }
+
+    &::after {
+      content: "";
+      width: 32px;
+      height: 1.2px;
+      margin-top: 16px;
+      background: $primary;
+    }
+  }
+
+  .design__text {
+    margin-bottom: 40px;
+    @include fontFuturaBook;
+    font-size: 15px;
+    color: $secondary;
+    text-align: center;
+  }
+
+  .design__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .item {
+      margin-bottom: 60px;
+      .description {
+        position: relative;
+        width: 270px;
+        height: 177px;
+        margin-top: -130px;
+        padding: 18px 31px 0;
+        background: $secondary;
+        z-index: 2;
+
+        .description__header {
+          margin-bottom: 13px;
+          @include fontYesevaOne;
+          font-size: 15px;
+          color: $tertiary;
+        }
+
+        .description__list {
+          li {
+            margin-bottom: 7px;
+            @include fontFuturaBook;
+            font-size: 13px;
+            color: #959595;
+          }
+        }
+      }
+
+      .price {
+        position: relative;
+        width: 190px;
+        height: 40px;
+        margin-top: -10px;
+        @include fontYesevaOne;
+        font-size: 15px;
+        text-transform: uppercase;
+        z-index: 3;
+      }
+    }
+
+    .item-two,
+    .item-three {
+      .description {
+        height: 205px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .design {
+    padding: 170px 25px 0;
+    .design__gallery {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .design {
+    padding: 160px 100px 0;
+    background: $secondary;
+
+    .design__gallery {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
