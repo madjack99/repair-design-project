@@ -133,7 +133,8 @@
 
     .pagination {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-items: center;
 
       .pagination__item {
         color: $secondary;

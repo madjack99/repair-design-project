@@ -367,8 +367,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .projects .pagination .pagination__item {
     color: #ffffff;
@@ -1077,8 +1081,20 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .design .design__gallery .item .description {
+    margin-left: 30px;
+  }
+  .design .design__gallery .item .price {
+    margin-left: 30px;
+  }
+  .design .design__gallery .item-three .description {
+    height: 330px;
   }
 }
 
@@ -1087,6 +1103,12 @@
     padding: 160px 100px 0;
     background: #ffffff;
   }
+  .design .design__header {
+    color: #000000;
+  }
+  .design .design__text {
+    color: #000000;
+  }
   .design .design__gallery {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1094,6 +1116,87 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+.steps {
+  display: none;
+}
+
+@media only screen and (min-width: 1400px) {
+  .steps {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 337px 765px;
+        grid-template-columns: 337px 765px;
+    -webkit-column-gap: 136px;
+            column-gap: 136px;
+    height: 1115px;
+    margin-top: -430px;
+    padding: 400px 100px 0;
+    background: #000000;
+  }
+  .steps .details .details__intro {
+    margin-bottom: 18px;
+    font-family: "FuturaDemiC";
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .steps .details .details__header {
+    margin-bottom: 92px;
+    font-family: "YesevaOne";
+    font-size: 27px;
+    color: #e3b873;
+  }
+  .steps .details .details__index {
+    margin-bottom: 22px;
+    font-family: "YesevaOne";
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .steps .details .explanation .explanation__title {
+    margin-bottom: 16px;
+    font-family: "YesevaOne";
+    font-size: 15px;
+    color: #e3b873;
+    text-transform: uppercase;
+  }
+  .steps .details .explanation .explanation__text {
+    margin-bottom: 61px;
+    font-family: "FuturaBookC";
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.5rem;
+  }
+  .steps .details .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .steps .details .pagination .pagination__item {
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .steps .additional .links {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    row-gap: 36px;
+  }
+  .steps .additional .links .link__item {
+    height: 80px;
+    line-height: 1.7rem;
+    color: grey;
+  }
+  .steps .additional .links .link__item:hover {
+    color: #ffffff;
   }
 }
 

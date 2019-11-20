@@ -106,7 +106,24 @@
     .design__gallery {
       flex-direction: row;
       justify-content: space-between;
+      align-items: flex-start;
       flex-wrap: wrap;
+
+      .item {
+        .description {
+          margin-left: 30px;
+        }
+
+        .price {
+          margin-left: 30px;
+        }
+      }
+
+      .item-three {
+        .description {
+          height: 330px;
+        }
+      }
     }
   }
 }
@@ -115,6 +132,14 @@
   .design {
     padding: 160px 100px 0;
     background: $secondary;
+
+    .design__header {
+      color: $tertiary;
+    }
+
+    .design__text {
+      color: $tertiary;
+    }
 
     .design__gallery {
       flex-direction: row;
