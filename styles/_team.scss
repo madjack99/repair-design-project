@@ -1,0 +1,150 @@
+.team {
+  padding: 76px 18px 0;
+  background: $tertiary;
+
+  .team__header {
+    margin-bottom: 12px;
+    @include fontYesevaOne;
+    font-size: 22px;
+    color: $secondary;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .team__image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+
+    .picture {
+      margin: 0 10px;
+    }
+
+    &::before {
+      content: "";
+      width: 32px;
+      height: 1.2px;
+      margin-top: 16px;
+      background: $primary;
+    }
+
+    &::after {
+      content: "";
+      width: 32px;
+      height: 1.2px;
+      margin-top: 16px;
+      background: $primary;
+    }
+  }
+
+  .team__text {
+    margin-bottom: 76px;
+    @include fontFuturaBook;
+    font-size: 15px;
+    color: $secondary;
+    text-align: center;
+  }
+
+  .employees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .person {
+      position: relative;
+      width: 304px;
+      height: 357px;
+      margin-bottom: 131px;
+
+      .person__logo {
+        position: absolute;
+        top: -45px;
+        left: -45px;
+      }
+
+      .person__description {
+        position: absolute;
+        width: 233px;
+        bottom: -69px;
+        left: 31px;
+
+        .person__name {
+          height: 93px;
+          padding: 22px 23px 0;
+          @include fontYesevaOne;
+          font-size: 18px;
+          background: $secondary;
+          text-align: center;
+
+          .person__position {
+            @include fontFuturaBook;
+            font-size: 18px;
+            color: #959595;
+          }
+        }
+        .person__experience {
+          height: 44px;
+          padding: 13px 23px;
+          @include fontYesevaOne;
+          font-size: 13px;
+          color: $secondary;
+          text-align: center;
+          background: $primary;
+        }
+      }
+    }
+
+    .manager {
+      background: url("../assets/images/manager-image.png");
+    }
+    .designer {
+      background: url("../assets/images/designer-image.png");
+    }
+    .foreman {
+      background: url("../assets/images/foreman-image.png");
+    }
+  }
+
+  .team__advertising {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .team {
+    .employees {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .team__advertising {
+      display: block;
+      height: 437px;
+      margin-top: -275px;
+      padding: 301px 0 0;
+      @include fontFuturaBook;
+      font-size: 20px;
+      text-align: center;
+      color: $secondary;
+      background: $tertiary;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .team {
+    .team__header {
+      font-size: 20px;
+    }
+
+    .team__text {
+      font-size: 20px;
+    }
+
+    .team__advertising {
+      color: $tertiary;
+      background: $secondary;
+    }
+  }
+}

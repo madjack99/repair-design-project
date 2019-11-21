@@ -727,9 +727,8 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1053,6 +1052,10 @@
   color: #959595;
 }
 
+.design .design__gallery .item .description .description__list .item-desktop {
+  display: none;
+}
+
 .design .design__gallery .item .price {
   position: relative;
   width: 190px;
@@ -1078,9 +1081,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1089,6 +1091,9 @@
   }
   .design .design__gallery .item .description {
     margin-left: 30px;
+  }
+  .design .design__gallery .item .description .description__list .item-desktop {
+    display: block;
   }
   .design .design__gallery .item .price {
     margin-left: 30px;
@@ -1197,6 +1202,169 @@
   }
   .steps .additional .links .link__item:hover {
     color: #ffffff;
+  }
+}
+
+.team {
+  padding: 76px 18px 0;
+  background: #000000;
+}
+
+.team .team__header {
+  margin-bottom: 12px;
+  font-family: "YesevaOne";
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team .team__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 23px;
+}
+
+.team .team__image .picture {
+  margin: 0 10px;
+}
+
+.team .team__image::before {
+  content: "";
+  width: 32px;
+  height: 1.2px;
+  margin-top: 16px;
+  background: #e3b873;
+}
+
+.team .team__image::after {
+  content: "";
+  width: 32px;
+  height: 1.2px;
+  margin-top: 16px;
+  background: #e3b873;
+}
+
+.team .team__text {
+  margin-bottom: 76px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.team .employees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team .employees .person {
+  position: relative;
+  width: 304px;
+  height: 357px;
+  margin-bottom: 131px;
+}
+
+.team .employees .person .person__logo {
+  position: absolute;
+  top: -45px;
+  left: -45px;
+}
+
+.team .employees .person .person__description {
+  position: absolute;
+  width: 233px;
+  bottom: -69px;
+  left: 31px;
+}
+
+.team .employees .person .person__description .person__name {
+  height: 93px;
+  padding: 22px 23px 0;
+  font-family: "YesevaOne";
+  font-size: 18px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.team .employees .person .person__description .person__name .person__position {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  color: #959595;
+}
+
+.team .employees .person .person__description .person__experience {
+  height: 44px;
+  padding: 13px 23px;
+  font-family: "YesevaOne";
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  background: #e3b873;
+}
+
+.team .employees .manager {
+  background: url("../assets/images/manager-image.png");
+}
+
+.team .employees .designer {
+  background: url("../assets/images/designer-image.png");
+}
+
+.team .employees .foreman {
+  background: url("../assets/images/foreman-image.png");
+}
+
+.team .team__advertising {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .team .employees {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .team .team__advertising {
+    display: block;
+    height: 437px;
+    margin-top: -275px;
+    padding: 301px 0 0;
+    font-family: "FuturaBookC";
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .team .team__header {
+    font-size: 20px;
+  }
+  .team .team__text {
+    font-size: 20px;
+  }
+  .team .team__advertising {
+    color: #000000;
+    background: #ffffff;
   }
 }
 

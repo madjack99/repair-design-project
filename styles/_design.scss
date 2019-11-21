@@ -76,6 +76,10 @@
             font-size: 13px;
             color: #959595;
           }
+
+          .item-desktop {
+            display: none;
+          }
         }
       }
 
@@ -105,13 +109,18 @@
     padding: 170px 25px 0;
     .design__gallery {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: flex-start;
       flex-wrap: wrap;
 
       .item {
         .description {
           margin-left: 30px;
+          .description__list {
+            .item-desktop {
+              display: block;
+            }
+          }
         }
 
         .price {
