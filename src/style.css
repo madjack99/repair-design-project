@@ -1346,7 +1346,7 @@
     display: block;
     height: 437px;
     margin-top: -275px;
-    padding: 301px 0 0;
+    padding: 301px 0 88px;
     font-family: "FuturaBookC";
     font-size: 20px;
     text-align: center;
@@ -1364,6 +1364,137 @@
   }
   .team .team__advertising {
     color: #000000;
+    background: #ffffff;
+  }
+}
+
+.clients {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .clients {
+    display: block;
+    padding: 30px 100px 400px;
+  }
+  .clients .clients__header {
+    margin-bottom: 13px;
+    font-family: "YesevaOne";
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .clients .clients__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 23px;
+  }
+  .clients .clients__image .picture {
+    margin: 0 10px;
+  }
+  .clients .clients__image::before {
+    content: "";
+    width: 32px;
+    height: 1.2px;
+    margin-top: 16px;
+    background: #e3b873;
+  }
+  .clients .clients__image::after {
+    content: "";
+    width: 32px;
+    height: 1.2px;
+    margin-top: 16px;
+    background: #e3b873;
+  }
+  .clients .clients__text {
+    margin-bottom: 39px;
+    font-family: "FuturaBookC";
+    font-size: 20px;
+    text-align: center;
+  }
+  .clients .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients .cards .client {
+    position: relative;
+    width: 367px;
+    height: 428px;
+    margin-bottom: 70px;
+    padding: 30px 20px;
+    background: #f7f7f7;
+  }
+  .clients .cards .client .client__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .clients .cards .client .client__details .client__image {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .clients .cards .client .client__details .client__name {
+    font-family: "YesevaOne";
+    font-size: 18px;
+  }
+  .clients .cards .client .client__text {
+    font-family: "FuturaBookC";
+    font-size: 15px;
+    text-transform: lowercase;
+    line-height: 1.5rem;
+  }
+  .clients .cards .client .client__text .first-letter {
+    text-transform: uppercase;
+  }
+  .clients .cards .client .work-details {
+    position: absolute;
+    left: 0;
+    bottom: -27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 293px;
+    height: 54px;
+    padding: 11px 26px;
+    background: #e3b873;
+  }
+  .clients .cards .client .work-details .work-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "YesevaOne";
+    font-size: 17px;
+    color: #ffffff;
+  }
+  .clients .cards .client .work-details .work-item .picture {
+    margin-right: 10px;
+  }
+  .clients .cards .client .work-details .work-amount .footage {
+    margin-right: 15px;
+  }
+  .clients .cards .client .work-details .work-amount::after {
+    content: "";
+    width: 1px;
+    height: 54px;
     background: #ffffff;
   }
 }

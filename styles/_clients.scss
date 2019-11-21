@@ -1,0 +1,130 @@
+.clients {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .clients {
+    display: block;
+    padding: 30px 100px 400px;
+
+    .clients__header {
+      margin-bottom: 13px;
+      @include fontYesevaOne;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .clients__image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 23px;
+
+      .picture {
+        margin: 0 10px;
+      }
+
+      &::before {
+        content: "";
+        width: 32px;
+        height: 1.2px;
+        margin-top: 16px;
+        background: $primary;
+      }
+
+      &::after {
+        content: "";
+        width: 32px;
+        height: 1.2px;
+        margin-top: 16px;
+        background: $primary;
+      }
+    }
+
+    .clients__text {
+      margin-bottom: 39px;
+      @include fontFuturaBook;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .client {
+        position: relative;
+        width: 367px;
+        height: 428px;
+        margin-bottom: 70px;
+        padding: 30px 20px;
+        background: darken($secondary, 3);
+
+        .client__details {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+
+          .client__image {
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+
+          .client__name {
+            @include fontYesevaOne;
+            font-size: 18px;
+          }
+        }
+
+        .client__text {
+          @include fontFuturaBook;
+          font-size: 15px;
+          text-transform: lowercase;
+          line-height: 1.5rem;
+
+          .first-letter {
+            text-transform: uppercase;
+          }
+        }
+
+        .work-details {
+          position: absolute;
+          left: 0;
+          bottom: -27px;
+          display: flex;
+          justify-content: space-between;
+          width: 293px;
+          height: 54px;
+          padding: 11px 26px;
+          background: $primary;
+
+          .work-item {
+            display: flex;
+            align-items: center;
+            @include fontYesevaOne;
+            font-size: 17px;
+            color: $secondary;
+
+            .picture {
+              margin-right: 10px;
+            }
+          }
+
+          .work-amount {
+            .footage {
+              margin-right: 15px;
+            }
+
+            &::after {
+              content: "";
+              width: 1px;
+              height: 54px;
+              background: $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
