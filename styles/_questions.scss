@@ -1,0 +1,100 @@
+.questions {
+  padding: 76px 18px 0;
+  background: $tertiary;
+
+  .questions__header {
+    margin-bottom: 52px;
+    @include fontYesevaOne;
+    font-size: 20px;
+    color: $secondary;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .form {
+    display: grid;
+
+    .name-label,
+    .tel-label {
+      margin-bottom: 65px;
+    }
+
+    .question-label {
+      margin-bottom: 21px;
+    }
+
+    .label {
+      @include fontFuturaBook;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .input {
+      width: 100%;
+      margin-top: 7px;
+      padding-bottom: 8px;
+      border: none;
+      border-bottom: 1px solid $secondary;
+      background: $tertiary;
+
+      &::placeholder {
+        @include fontFuturaBook;
+        font-size: 18px;
+        color: $secondary;
+      }
+    }
+
+    .checkbox-label {
+      margin-bottom: 67px;
+      @include fontFuturaBook;
+      font-size: 16px;
+      color: $secondary;
+    }
+
+    .submit {
+      height: 51px;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .questions {
+    .form {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .questions {
+    width: 883px;
+    margin-top: -226px;
+    margin-left: 288px;
+    padding: 34px 181px;
+
+    .form {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 58px;
+      width: 100%;
+
+      .question-label {
+        grid-column: 1/3;
+        margin-bottom: 46px;
+      }
+
+      .checkbox-label {
+        grid-column: 1/3;
+        text-align: center;
+      }
+
+      .submit {
+        grid-column: 1/3;
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
