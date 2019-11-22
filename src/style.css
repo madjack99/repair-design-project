@@ -23,7 +23,8 @@
   src: url("../assets/fonts/proximaNova/proximanova.otf") format("opentype");
 }
 
-.header {
+.header,
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,24 +37,40 @@
   background: #000000;
 }
 
-.header .main-title {
+.header .main-title,
+.footer .main-title {
   color: #e3b873;
   font-size: 12px;
   font-family: "FuturaDemiC", sans-serif;
   text-transform: uppercase;
 }
 
-.header .navigation__list {
+.header .navigation__list,
+.footer .navigation__list {
   display: none;
 }
 
-.header .mobile {
+.header .mobile,
+.footer .mobile {
   color: #ffffff;
   font-size: 12px;
   font-family: "FuturaDemiC", sans-serif;
 }
 
-.header .request__btn {
+.header .request__btn,
+.footer .request__btn {
+  display: none;
+}
+
+.footer {
+  height: 0;
+}
+
+.footer .main-title {
+  display: none;
+}
+
+.footer .mobile {
   display: none;
 }
 
@@ -142,13 +159,25 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
+  .footer {
+    height: 0;
+  }
+  .footer .main-title {
+    display: block;
+  }
+  .footer .mobile {
+    display: block;
+  }
+  .header,
+  .footer {
     height: 90px;
   }
-  .header .main-title {
+  .header .main-title,
+  .footer .main-title {
     font-size: 14px;
   }
-  .header .navigation__list {
+  .header .navigation__list,
+  .footer .navigation__list {
     width: 55vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,11 +189,13 @@
     font-family: "FuturaBookC", sans-serif;
     font-size: 14px;
   }
-  .header .navigation__list .navigation__link {
+  .header .navigation__list .navigation__link,
+  .footer .navigation__list .navigation__link {
     color: #ffffff;
     text-decoration: none;
   }
-  .header .mobile {
+  .header .mobile,
+  .footer .mobile {
     color: #e3b873;
   }
   .introduction {
