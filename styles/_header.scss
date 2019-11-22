@@ -41,7 +41,6 @@
 }
 
 .introduction {
-  width: 375px;
   height: 476px;
   padding: 85px 18px 0;
   background-image: url("../assets/images/introductionBGMobile.png");
@@ -97,17 +96,7 @@
 }
 
 @media only screen and (min-width: 375px) {
-  .header {
-    .request__btn {
-      display: block;
-      width: 161px;
-      height: 37px;
-      font-size: 13px;
-    }
-  }
-
   .introduction {
-    width: 100vw;
     height: 707px;
     padding: 195px 0 0 30px;
     background-image: url("../assets/images/introductionBGDesktop.png");
@@ -131,6 +120,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .header,
   .footer {
     height: 0;
 
@@ -162,6 +152,10 @@
       .navigation__link {
         color: $secondary;
         text-decoration: none;
+
+        &:hover {
+          color: $primary;
+        }
       }
     }
 
@@ -206,6 +200,18 @@
         font-size: 22px;
         color: $primary;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .header,
+  .footer {
+    .request__btn {
+      display: block;
+      width: 161px;
+      height: 37px;
+      font-size: 13px;
     }
   }
 }

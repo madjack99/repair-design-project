@@ -20,6 +20,10 @@
 a {
   color: $secondary;
   text-decoration: none;
+
+  &:hover {
+    color: $primary;
+  }
 }
 
 .btn {

@@ -61,6 +61,10 @@
         .pagination__item {
           color: $secondary;
           cursor: pointer;
+
+          &:hover {
+            color: $primary;
+          }
         }
       }
     }

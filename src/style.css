@@ -75,7 +75,6 @@
 }
 
 .introduction {
-  width: 375px;
   height: 476px;
   padding: 85px 18px 0;
   background-image: url("../assets/images/introductionBGMobile.png");
@@ -131,14 +130,7 @@
 }
 
 @media only screen and (min-width: 375px) {
-  .header .request__btn {
-    display: block;
-    width: 161px;
-    height: 37px;
-    font-size: 13px;
-  }
   .introduction {
-    width: 100vw;
     height: 707px;
     padding: 195px 0 0 30px;
     background-image: url("../assets/images/introductionBGDesktop.png");
@@ -159,12 +151,15 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .header,
   .footer {
     height: 0;
   }
+  .header .main-title,
   .footer .main-title {
     display: block;
   }
+  .header .mobile,
   .footer .mobile {
     display: block;
   }
@@ -193,6 +188,10 @@
   .footer .navigation__list .navigation__link {
     color: #ffffff;
     text-decoration: none;
+  }
+  .header .navigation__list .navigation__link:hover,
+  .footer .navigation__list .navigation__link:hover {
+    color: #e3b873;
   }
   .header .mobile,
   .footer .mobile {
@@ -235,6 +234,16 @@
     margin-left: 12px;
     font-size: 22px;
     color: #e3b873;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .header .request__btn,
+  .footer .request__btn {
+    display: block;
+    width: 161px;
+    height: 37px;
+    font-size: 13px;
   }
 }
 
@@ -410,6 +419,7 @@
   }
   .projects .pagination .pagination__item:hover {
     cursor: pointer;
+    color: #e3b873;
   }
 }
 
@@ -767,14 +777,16 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1400px) {
   .graph {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     margin-bottom: 260px;
   }
   .graph .graph__image {
-    width: 1083px;
+    width: 800px;
     height: 691px;
     background: url("../assets/images/graph.png") no-repeat;
   }
@@ -854,13 +866,6 @@
     font-family: "FuturaDemiC";
     font-size: 20px;
     color: #e3b873;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .graph {
-    -ms-grid-columns: 1083px auto;
-        grid-template-columns: 1083px auto;
   }
 }
 
@@ -1219,6 +1224,9 @@
     color: #ffffff;
     cursor: pointer;
   }
+  .steps .details .pagination .pagination__item:hover {
+    color: #e3b873;
+  }
   .steps .additional .links {
     display: -ms-grid;
     display: grid;
@@ -1406,7 +1414,7 @@
 @media only screen and (min-width: 768px) {
   .clients {
     display: block;
-    padding: 30px 100px 400px;
+    padding: 30px 100px 40px;
   }
   .clients .clients__header {
     margin-bottom: 13px;
@@ -1530,6 +1538,13 @@
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  .clients {
+    display: block;
+    padding: 30px 100px 100px;
+  }
+}
+
 .questions {
   padding: 76px 18px 0;
   background: #000000;
@@ -1621,7 +1636,7 @@
   .questions {
     width: 883px;
     margin-top: -226px;
-    margin-left: 288px;
+    margin: auto;
     padding: 34px 181px;
   }
   .questions .form {
@@ -1726,6 +1741,10 @@
 a {
   color: #ffffff;
   text-decoration: none;
+}
+
+a:hover {
+  color: #e3b873;
 }
 
 .btn {

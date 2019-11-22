@@ -2,13 +2,14 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1400px) {
   .graph {
     display: grid;
+    grid-template-columns: auto auto;
     margin-bottom: 260px;
 
     .graph__image {
-      width: 1083px;
+      width: 800px;
       height: 691px;
       background: url("../assets/images/graph.png") no-repeat;
     }
@@ -86,11 +87,5 @@
         }
       }
     }
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .graph {
-    grid-template-columns: 1083px auto;
   }
 }
