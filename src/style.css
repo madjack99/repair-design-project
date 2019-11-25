@@ -848,9 +848,61 @@
     margin-bottom: 260px;
   }
   .graph .graph__image {
+    position: relative;
     width: 800px;
     height: 691px;
     background: url("../assets/images/graph.png") no-repeat;
+  }
+  .graph .graph__image .graph__circle {
+    position: absolute;
+    top: 30px;
+    left: -100px;
+    width: 650px;
+    height: 650px;
+    border: 5px solid #e3b873;
+    border-radius: 50%;
+  }
+  .graph .graph__image .graph__point {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+  }
+  .graph .graph__image .graph__point .point__number {
+    width: 102px;
+    height: 100px;
+    font-family: "YesevaOne";
+    font-size: 18px;
+    line-height: 60px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #e3b873;
+    border: 20px solid #ffffff;
+    border-radius: 50%;
+  }
+  .graph .graph__image .graph__point .point__text {
+    margin-left: 20px;
+    font-family: "FuturaMediumC";
+    font-size: 18px;
+  }
+  .graph .graph__image .point_one {
+    top: 10px;
+    left: 290px;
+  }
+  .graph .graph__image .point_two {
+    top: 130px;
+    left: 440px;
+  }
+  .graph .graph__image .point_three {
+    top: 310px;
+    left: 495px;
+  }
+  .graph .graph__image .point_four {
+    top: 493px;
+    left: 440px;
   }
   .graph .details .form {
     width: 509px;

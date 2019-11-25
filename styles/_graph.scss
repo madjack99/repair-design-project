@@ -9,9 +9,66 @@
     margin-bottom: 260px;
 
     .graph__image {
+      position: relative;
       width: 800px;
       height: 691px;
       background: url("../assets/images/graph.png") no-repeat;
+
+      .graph__circle {
+        position: absolute;
+        top: 30px;
+        left: -100px;
+        // background: red;
+        width: 650px;
+        height: 650px;
+        border: 5px solid $primary;
+        border-radius: 50%;
+      }
+
+      .graph__point {
+        display: flex;
+        align-items: center;
+        position: absolute;
+
+        .point__number {
+          width: 102px;
+          height: 100px;
+          @include fontYesevaOne;
+          font-size: 18px;
+          line-height: 60px;
+          color: $secondary;
+          text-align: center;
+          background-color: $primary;
+          border: 20px solid $secondary;
+          border-radius: 50%;
+        }
+
+        .point__text {
+          margin-left: 20px;
+          @include fontFuturaMedium;
+          font-size: 18px;
+        }
+      }
+
+      .point_one {
+        top: 10px;
+        left: 290px;
+      }
+
+      .point_two {
+        top: 130px;
+        left: 440px;
+      }
+
+      .point_three {
+        top: 310px;
+        left: 495px;
+      }
+
+      .point_four {
+        top: 493px;
+        left: 440px;
+      }
     }
 
     .details {
