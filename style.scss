@@ -13,6 +13,9 @@
 @import "styles/questions";
 @import "styles/map";
 
+body {
+  overflow-x: hidden;
+}
 * {
   box-sizing: border-box;
 }
@@ -34,5 +37,42 @@ a {
 
   &:hover {
     color: $tertiary;
+    cursor: pointer;
   }
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+.custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: $primary;
+
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    height: 8px;
+    width: 5px;
+    border: solid $secondary;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.checkbox:checked ~ .custom-checkbox::after {
+  display: block;
 }

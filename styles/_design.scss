@@ -107,6 +107,10 @@
 @media only screen and (min-width: 768px) {
   .design {
     padding: 170px 25px 0;
+
+    .design__header {
+      padding-top: 100px;
+    }
     .design__gallery {
       flex-direction: row;
       justify-content: space-around;

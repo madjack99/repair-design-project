@@ -48,7 +48,7 @@
         height: 241px;
         margin-top: -120px;
         padding: 21px 31px;
-        background: rgb(245, 242, 242);
+        background: $secondary;
         z-index: 1;
 
         .description__header {
@@ -60,6 +60,7 @@
         .description__points {
           margin-left: 14px;
           list-style: disc;
+          color: #959595;
           @include fontFuturaBook;
 
           li {
@@ -96,6 +97,24 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
+
+      .item {
+        .item__picture {
+          width: 392px;
+          height: 421px;
+        }
+
+        .item__description {
+          width: 330px;
+          margin-left: 31px;
+        }
+
+        .item__price {
+          width: 228px;
+          height: 54px;
+          margin-left: 31px;
+        }
+      }
     }
   }
 }

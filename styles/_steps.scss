@@ -24,8 +24,16 @@
       .details__header {
         margin-bottom: 92px;
         @include fontYesevaOne;
+        line-height: 2.4rem;
         font-size: 27px;
         color: $primary;
+        text-transform: uppercase;
+
+        .line {
+          position: relative;
+          margin-left: 35px;
+          bottom: 5px;
+        }
       }
 
       .details__index {
@@ -55,15 +63,20 @@
 
       .pagination {
         display: flex;
-        justify-content: space-around;
+        width: 287px;
+        justify-content: space-between;
         align-items: center;
 
-        .pagination__item {
-          color: $secondary;
+        .pagination__arrow {
           cursor: pointer;
+        }
+
+        .pagination__item {
+          opacity: 0.5;
 
           &:hover {
-            color: $primary;
+            cursor: pointer;
+            opacity: 1;
           }
         }
       }

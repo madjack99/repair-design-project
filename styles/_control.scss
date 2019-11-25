@@ -79,6 +79,7 @@
       border-bottom: 1px solid $secondary;
       background: $tertiary;
       font-size: 15px;
+      color: $secondary;
       @include fontFuturaBook;
 
       &::placeholder {
@@ -145,6 +146,7 @@
         width: 260px;
         background: $secondary;
         border-bottom: 1px solid $tertiary;
+        color: $tertiary;
 
         &::placeholder {
           color: $tertiary;
@@ -162,6 +164,7 @@
       .checkbox-label {
         grid-row: 2/3;
         grid-column: 2/3;
+        margin-bottom: 147px;
       }
       .submit {
         grid-row: 3/4;
