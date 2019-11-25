@@ -217,6 +217,11 @@
             transform: rotate(90deg);
     font-family: "FuturaDemiC";
   }
+  .introduction .socials .social__line {
+    position: relative;
+    top: 90px;
+    right: 45px;
+  }
   .introduction .scroll-down {
     display: block;
     position: absolute;
@@ -230,10 +235,14 @@
     background: #000000;
     font-family: "YesevaOne", sans-serif;
   }
-  .introduction .scroll-down .fa-chevron-circle-down {
+  .introduction .scroll-down .scroll-down-btn {
+    position: relative;
+    top: 10px;
     margin-left: 12px;
-    font-size: 22px;
-    color: #e3b873;
+  }
+  .introduction .btn-calculate,
+  .introduction .btn-apply {
+    width: 207px;
   }
 }
 
@@ -264,6 +273,10 @@
   color: #e3b873;
 }
 
+.projects .projects__header .line {
+  display: none;
+}
+
 .projects .projects__text {
   margin-bottom: 36px;
   text-align: center;
@@ -287,13 +300,16 @@
   background: url("../assets/images/projectImage.png");
 }
 
+.projects .projects__gallery .right-desktop {
+  display: none;
+}
+
 .projects .projects__gallery .controls {
-  color: #e3b873;
   margin: 14px;
 }
 
 .projects .projects__gallery .controls:hover {
-  color: #ffffff;
+  cursor: pointer;
 }
 
 .projects .project__info {
@@ -335,7 +351,20 @@
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    padding: 110px 100px 410px 100px;
+  }
   .projects .project-nav {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -345,23 +374,14 @@
     font-family: "YesevaOne", sans-serif;
     font-size: 14px;
   }
+  .projects .project-nav .project-nav__link {
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
   .projects .project-nav .project-nav__link:hover {
+    text-decoration: underline;
+    opacity: 1;
     color: #e3b873;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .projects {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 40% 60%;
-        grid-template-columns: 40% 60%;
-    padding: 110px 100px 0 100px;
-  }
-  .projects .project-nav {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
   }
   .projects .projects__header {
     -ms-grid-column: 1;
@@ -371,6 +391,15 @@
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     font-size: 27px;
+    line-height: 2.4rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .projects .projects__header .line {
+    display: inline;
+    position: relative;
+    margin-left: 35px;
+    bottom: 5px;
   }
   .projects .projects__text {
     -ms-grid-column: 1;
@@ -386,11 +415,21 @@
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     grid-row: 2/5;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 100%;
     height: 482px;
     margin-bottom: 90px;
     background: url("../assets/images/projectImageDesktop.png");
     background-repeat: no-repeat;
+  }
+  .projects .projects__gallery .right-desktop {
+    display: inline;
+  }
+  .projects .projects__gallery .left-mobile,
+  .projects .projects__gallery .right-mobile {
+    display: none;
   }
   .projects .project__info {
     -ms-grid-column: 1;
@@ -407,6 +446,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 164px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -414,12 +454,15 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .projects .pagination .pagination__arrow {
+    cursor: pointer;
+  }
   .projects .pagination .pagination__item {
-    color: #ffffff;
+    opacity: 0.5;
   }
   .projects .pagination .pagination__item:hover {
     cursor: pointer;
-    color: #e3b873;
+    opacity: 1;
   }
 }
 
@@ -588,6 +631,7 @@
     color: #000000;
   }
   .control .video-clip {
+    margin-top: -400px;
     width: 817px;
     height: 434px;
   }
@@ -652,6 +696,7 @@
     width: 200px;
     height: 51px;
     font-size: 16px;
+    text-transform: uppercase;
   }
 }
 

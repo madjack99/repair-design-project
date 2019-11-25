@@ -12,6 +12,10 @@
     font-family: "YesevaOne", sans-serif;
     font-size: 22px;
     color: $primary;
+
+    .line {
+      display: none;
+    }
   }
 
   .projects__text {
@@ -30,12 +34,15 @@
     height: 241px;
     background: url("../assets/images/projectImage.png");
 
+    .right-desktop {
+      display: none;
+    }
+
     .controls {
-      color: $primary;
       margin: 14px;
 
       &:hover {
-        color: $secondary;
+        cursor: pointer;
       }
     }
   }
@@ -70,20 +77,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .project-nav {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 50px;
-      font-family: "YesevaOne", sans-serif;
-      font-size: 14px;
-
-      .project-nav__link {
-        &:hover {
-          color: $primary;
-        }
-      }
-    }
   }
 }
 
@@ -91,16 +84,41 @@
   .projects {
     display: grid;
     grid-template-columns: 40% 60%;
-    padding: 110px 100px 0 100px;
+    padding: 110px 100px 410px 100px;
 
     .project-nav {
       grid-column: 2/3;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+      font-family: "YesevaOne", sans-serif;
+      font-size: 14px;
+
+      .project-nav__link {
+        opacity: 0.5;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+          opacity: 1;
+          color: $primary;
+        }
+      }
     }
 
     .projects__header {
       grid-column: 1/2;
       grid-row: 1/2;
       font-size: 27px;
+      line-height: 2.4rem;
+      text-align: left;
+      text-transform: uppercase;
+
+      .line {
+        display: inline;
+        position: relative;
+        margin-left: 35px;
+        bottom: 5px;
+      }
     }
 
     .projects__text {
@@ -112,11 +130,21 @@
     .projects__gallery {
       grid-column: 2/3;
       grid-row: 2/5;
+      justify-content: flex-end;
       width: 100%;
       height: 482px;
       margin-bottom: 90px;
       background: url("../assets/images/projectImageDesktop.png");
       background-repeat: no-repeat;
+
+      .right-desktop {
+        display: inline;
+      }
+
+      .left-mobile,
+      .right-mobile {
+        display: none;
+      }
     }
 
     .project__info {
@@ -133,15 +161,20 @@
 
     .pagination {
       display: flex;
+      width: 164px;
       justify-content: space-between;
       align-items: center;
 
+      .pagination__arrow {
+        cursor: pointer;
+      }
+
       .pagination__item {
-        color: $secondary;
+        opacity: 0.5;
 
         &:hover {
           cursor: pointer;
-          color: $primary;
+          opacity: 1;
         }
       }
     }

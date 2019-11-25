@@ -125,6 +125,7 @@
     color: $tertiary;
 
     .video-clip {
+      margin-top: -400px;
       width: 817px;
       height: 434px;
     }
@@ -168,6 +169,7 @@
         width: 200px;
         height: 51px;
         font-size: 16px;
+        text-transform: uppercase;
       }
     }
   }

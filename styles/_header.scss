@@ -180,6 +180,12 @@
         transform: rotate(90deg);
         font-family: "FuturaDemiC";
       }
+
+      .social__line {
+        position: relative;
+        top: 90px;
+        right: 45px;
+      }
     }
 
     .scroll-down {
@@ -195,11 +201,16 @@
       background: $tertiary;
       font-family: "YesevaOne", sans-serif;
 
-      .fa-chevron-circle-down {
+      .scroll-down-btn {
+        position: relative;
+        top: 10px;
         margin-left: 12px;
-        font-size: 22px;
-        color: $primary;
       }
+    }
+
+    .btn-calculate,
+    .btn-apply {
+      width: 207px;
     }
   }
 }
