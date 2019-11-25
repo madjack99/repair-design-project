@@ -52,6 +52,7 @@
     background: url("../assets/images/dreams-bg.png");
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay;
+    overflow-x: hidden;
 
     .description {
       padding: 137px 99px;
@@ -91,7 +92,6 @@
 
       .samples__one {
         display: inline;
-        width: 100%;
       }
     }
   }
