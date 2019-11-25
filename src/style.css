@@ -310,6 +310,7 @@
 
 .projects .projects__gallery .controls:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .projects .project__info {
@@ -1026,6 +1027,7 @@
 
 .dreams .samples .samples__mobile .controls:hover {
   color: #ffffff;
+  opacity: 0.5;
 }
 
 .dreams .samples .samples__one,
@@ -1680,6 +1682,8 @@
 }
 
 .questions {
+  position: relative;
+  z-index: 1;
   padding: 76px 18px 0;
   background: #000000;
 }
